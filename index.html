@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Complete Physics Platformer Kit</title>
-    <link rel="shortcut icon" href="3DScroller_TemplateData/favicon.ico">
-    <link rel="stylesheet" href="3DScroller_TemplateData/style.css">
-    <script src="3DScroller_TemplateData/UnityProgress.js"></script>  
-    <script src="3DScroller_Build/UnityLoader.js"></script>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
     <script>
-      var scroller_gameInstance = UnityLoader.instantiate("3DScroller_gameContainer", "3DScroller_Build/Portfolio Build.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Portfolio Build 2D Sidescroller.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <div class="webgl-content">
-      <div id="3DScroller_gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="scroller_gameInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Complete Physics Platformer Kit</div>
       </div>
     </div>
